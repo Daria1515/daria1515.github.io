@@ -1,0 +1,100 @@
+
+
+.block-animation {
+		
+ 		background: url(mini-boy1.png);
+		display: flex;
+		width: 308px;
+    height: 269px;
+	  overflow: visible;
+		position: inherit;
+	border: none;	
+}
+
+
+
+
+.mini-boy7{ /*здесь сделать плавное появление кирпича*/
+	position: absolute;
+	top: 198px;
+    left: 305px;
+    transform: rotate(304deg);
+    opacity:0%;
+    transition: 1s; /*Скорость перехода состояния элемента*/
+	border: none;
+}     
+.block-animation:hover {
+        background: url(mini-boy2.png);
+	    overflow: visible;
+	    border: none;
+		
+        }
+
+
+.block-animation:hover .mini-boy7{ 
+		position: absolute;
+    top: 198px;
+    left: 305px;	
+	    opacity: 100%;
+		border: none;
+        }
+.text {
+    position: absolute;
+    top: 43px;
+    left: 222px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+    opacity: 0%;
+}
+.block-animation:hover .text{
+		opacity: 100%;
+}
+.block-animation:active{
+		background: url(mini-boy3.png);
+	    overflow: visible;
+		border: none;
+	    animation: shake 1s infinite;}
+
+      
+
+      /*here*/
+
+@keyframes shake{
+	0% {transform: translateX(10px)}
+  25%  {transform: translateX(-10px)}
+  50%  {transform: translateX(10px)}
+  75%  {transform: translateX(-10px)}
+  100% {transform: translateX(10px)}
+}
+
+
+
+.block-animation:active .text1{
+		opacity: 100%;
+}
+.text1 {
+    position: absolute;
+    top: 227px;
+    left: 197px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+    opacity: 0%;
+}
+.block-animation:active .text{
+		opacity: 0%;
+}
+
+
+.block-animation:active .mini-boy7{
+                
+  transform: translate(350px, -350px) rotate(360deg);
+  -webkit-transform: translate(350px, -350px) rotate(360deg);
+  -o-transform: translate(350px, -350px) rotate(360deg);
+  -moz-transform: translate(350px, -350px) rotate(360deg);
+
+}
+

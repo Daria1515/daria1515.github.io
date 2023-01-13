@@ -1,0 +1,326 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    font: normal 18px arial, helvetica, sans-serif;
+    color: #333;
+    background: #f0f0f0;
+    
+}
+
+/* выравниваем страницу по центру, делаем отступы и цвет фона */
+#main {
+    position: relative;
+    width: 1109px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+    display: block;
+    overflow: hidden;
+}
+
+/* header {
+    border: 2px solid #0f6cea;
+    height: 121px;
+    background-image: url(../img/header.jpg);
+} */
+
+/* nav {
+    width: 100%;
+    height: 32px;
+    background: #C633C6;
+} */
+
+/* #main > section {
+    overflow: hidden;
+    parder-right: dotted 1px #C633C6;
+    border-left: dotted 1px #C633C6;
+    background-color: #cadffc;
+} */
+
+section section {
+    float: right;
+    /* width: 800px; */
+    min-height: 450px;
+    padding: 0px 10px 10px 20px;
+    background-color: #ffffff;
+}
+
+/* aside {
+    width: 100px;
+    float: left;
+    margin: 25px 0 0 25px;
+} */
+
+/* .asd {
+    border: 2px dotted green;
+    border-width: medium;
+} */
+
+/* вложенная секция */
+
+/* правая часть */
+
+/* нижняя часть - footer */
+
+/* оформление внутренних элементов */
+
+nav li {
+    float: left;
+    margin: 8px 20px 0;
+    list-style-type: none;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 15px;
+}
+
+nav a:hover {
+    background-position: 1px;
+    background-repeat: no-repeat;
+}
+
+nav a:active {
+    background-position: 1px;
+    background-repeat: no-repeat;
+}
+
+.image {
+    margin: 10px 0;
+}
+
+aside h2,
+ul {
+    margin-left: 364px;
+}
+
+.active {
+    background-position: 1px;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #1e68ce;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: 1;
+    margin: 8px 0 12px;
+    color: #185bb6;
+}
+
+p {
+    text-align: justify;
+    word-spacing: 0.1ex;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/*aside li {
+    list-style-image: url('../img/marker.png');
+    list-style-position: inside;
+}*/
+
+aside li:hover {
+    background-color: rgb(39, 25, 25);
+}
+
+/* span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+} */
+
+/* .header_text {
+    color: #69808a;
+    text-align: center;
+    padding-top: 30px;
+    font: bold 16px italic tahoma, verdana;
+} */
+
+.block_a {
+    border: 2px solid gray;
+    width: 300px;
+    height: 330px;
+    background-color: white;
+    margin: 10px;
+    float: left;
+    text-align: right;
+}
+
+.a {
+    margin: 5px 10px 5px 5px;
+}
+
+.menu {
+    margin-left: 5px;
+    /* background-color: none; */
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.wrap {
+    position: absolute;
+}
+
+.pic {
+    position: absolute;
+    border: 2px dashed gray;
+}
+
+.pic0 {
+    position: absolute;
+    top: 152px;
+    left: -9999px;
+    border: 0;
+}
+
+.pic2 {
+    transform: rotate(90deg);
+}
+
+.pic5 {
+    transform: rotate(180deg);
+}
+
+.wr1 {
+    top: 140px;
+    left: 210px;
+}
+
+.wr2 {
+    top: 350px;
+    left: 210px;
+}
+
+.wr3 {
+    top: 240px;
+    left: 210px;
+}
+
+.wr4 {
+    top: 260px;
+    left: 370px;
+}
+
+.wr5 {
+    top: 350px;
+    left: 370px;
+}
+
+.wr6 {
+    top: 160px;
+    left: 350px;
+}
+.menu-btn {
+    z-index: 5;
+}
+.menu {
+    z-index: 4;
+}
+
+@media (max-width: 992px) {
+    #main {
+        width: auto;
+    }
+    aside {
+        display: none;
+    }
+    .box1 {
+        margin: 150px 0px 0px -75px;
+    }
+}
+@media (max-width: 765px) {
+    .box1 {
+        margin: 150px 0px 0px -275px;
+    }
+    .sectionn {
+        width: auto;
+    }
+}
+@media (max-width: 420px) {
+    .box1 {
+        margin: 150px 0px 0px -350px;
+    }   
+    .wr1 {
+        top: 150px;
+        left: 32px;
+    }
+    .wr2 {
+        top: 360px;
+        left: 15px;
+    }
+    .wr3 {
+        left: 35px;
+    }
+    .wr4 {
+        left: 190px;
+    }
+    .wr5 {
+        top: 360px;
+        left: 190px;
+    }
+    .wr6 {
+        left: 190px;
+    }
+}
+
+@media (max-width: 320px) {
+    .box1 {
+        margin: 150px 0px 0px -400px;
+    }   
+    .wr1 {
+        top: 250px;
+        left: 32px;
+    }
+    .wr2 {
+        top: 460px;
+        left: 15px;
+    }
+    .wr3 {
+        top: 340px;
+        left: 35px;
+    }
+    .wr4 {
+        top: 360px;
+        left: 190px;
+    }
+    .wr5 {
+        top: 460px;
+        left: 190px;
+    }
+    .wr6 {
+        top: 260px;
+        left: 190px;
+    }
+}
