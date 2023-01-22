@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Be like water</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+        <!--KR-->
+        <script src="dictionary.js"></script>
+        <script src="langcontrol.js"></script>
+        <script src="titlesolver.js"></script>
+        <script src="gamereseter.js"></script>
+        <!---->
+        <script src="menu.js"></script>
+    </head>
+    <body>
+        <div id="reset" word="reset"></div>
+        <div class="title" word="menu_header"></div>
+        <div id="toolbar">
+            <a href="index.html">
+                <div id="close-button">&#10006;</div>
+            </a>
+        </div>
+        <div id="menu" class="title">
+            <div word="dark_mode"><input type="checkbox" id="dark"></div>
+            <div word="language"><select id="lang-select">
+                    <option value="eng">ENG</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+            <div word="complexity">
+                <select name="comp" id="complex">
+                    <option value="0" word="easy"></option>
+                    <option value="1" word="medium"></option>
+                    <option value="2" word="hard"></option>
+                </select>
+            </div>
+            <div word="tiny_mode"><input type="checkbox" id="small"><input type="checkbox" id="tiny"></div>
+            <div word="animation"><input type="checkbox" id="transitions"></div>
+            <div word="slow_animation"><input type="checkbox" id="slow"></div>
+            <div word="instant_new_level"><input type="checkbox" id="instant-new-level"></div>
+            <div word="current_level"><input type="number" id="level"></div>
+        </div>
+        <script>load_menu()</script>
+    </body>
+</html>
